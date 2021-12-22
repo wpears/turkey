@@ -58,7 +58,7 @@ function getElapsedTime(measured, start){
       hadd++
     }
     hadd %= 12
-    return `${hadd}:${madd}`
+    return `${hadd}:${madd < 10 ? '0': ''}${madd}`
   }
 
 export { normalizeTime, getElapsedTime, getEndTime }

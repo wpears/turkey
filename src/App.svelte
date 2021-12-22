@@ -17,8 +17,8 @@
   let measuredTime = undefined
 
   //Derived constants
-  $: C = ovenTemp - startTemp
-  $: k = C && C > 0 && Math.log((ovenTemp - measuredTemp ) / C) / -getElapsedTime(measuredTime, startTime)
+  $: C = targetTemp > startTemp && ovenTemp - startTemp
+  $: k = C && C > 0 && measuredTemp > startTemp && Math.log((ovenTemp - measuredTemp ) / C) / -getElapsedTime(measuredTime, startTime)
   $: total = k && Math.log((ovenTemp - targetTemp) / C) / -k
 
   $: endTime = getEndTime(startTime, total)
