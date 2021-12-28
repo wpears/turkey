@@ -15,7 +15,7 @@
 <div class='inline ml-2'>
   {#each foods as food}
     {#if food === foods[curr]}
-      <span class="inline-block absolute" in:fly={{y:36}} out:fly={{y:-36}}>{food}</span>
+      <span class="inline-block absolute" in:fly={{y:36, duration:1000}} out:fly={{x:56}}>{food}</span>
     {/if}
   {/each}
 </div>
