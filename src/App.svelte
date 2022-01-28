@@ -22,7 +22,6 @@
   $: total = k && Math.log((ovenTemp - targetTemp) / C) / -k
 
   $: endTime = getEndTime(startTime, total)
-  $: console.log(C, k, total, endTime)
 </script>
 
 <main class="h-full bg-gradient-to-br from-red-500 to-orange-400">
