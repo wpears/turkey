@@ -25,9 +25,9 @@
   $: console.log(C, k, total, endTime)
 </script>
 
-<main class="h-screen bg-gradient-to-br from-red-500 to-orange-400">
+<main class="h-full bg-gradient-to-br from-red-500 to-orange-400">
   <div class="max-w-4xl container mx-auto flex flex-col content-center p-6
-    space-y-6 h-screen">
+    space-y-6 h-full">
     <h1 class="text-4xl lg:text-6xl text-center">How much time left on my <Food/></h1>
     <form class="max-w-xl px-6 mx-auto w-full">
       <SectionWrapper>
