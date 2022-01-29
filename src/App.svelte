@@ -24,9 +24,9 @@
   $: endTime = getEndTime(startTime, total)
 </script>
 
-<main class="h-full bg-gradient-to-br from-red-500 to-orange-400">
+<main class="bg-gradient-to-br from-red-500 to-orange-400 min-h-screen">
   <div class="max-w-4xl container mx-auto flex flex-col content-center p-6
-    space-y-6 h-full">
+    space-y-6">
     <h1 class="text-4xl lg:text-6xl text-center">How much time left on my <Food/></h1>
     <form class="max-w-xl px-6 mx-auto w-full">
       <SectionWrapper>
